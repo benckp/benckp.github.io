@@ -73,6 +73,10 @@
                         <td style="text-align: center"><button class="tag" style="font-family:FontAwesome;">Ch1</button> <br> <button class="tag"  style="font-family:FontAwesome;">Eg1</button></td>
                     </tr>
                 </table>
+                <p>www
+                    <?php for($i=1;$i<=5;$i++){ ?>
+                <li>Menu Item <?php echo $i; ?></li>
+                <?php } ?>.</p>
                 <table class="post past" tabindex="1">
                     <tr>
                         <th>[#1] Last year Title 1</th>
