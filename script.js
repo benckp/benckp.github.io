@@ -43,7 +43,7 @@ function voteDiff(event) {
     var slider = document.getElementById("slider");
     var slideValue = document.querySelector("span");
     slider.disabled = true
-    slideValue.style.marginLeft = (slider.value*12.1)+"px";
+    slideValue.style.marginLeft = (slider.value*12.05)+"px";
     slideValue.classList.add("show");
     //do the rest of the action...
 };
