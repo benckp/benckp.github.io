@@ -1,0 +1,44 @@
+.question, .answer, .solution {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border-radius: 10px;
+    text-align: left;
+    padding: 4px;
+}
+
+.question {
+    border: 2px solid purple;
+    background: radial-gradient(circle at center,rgba(216,191,216,0.05),rgba(216,191,216,.5));
+}
+
+.answer{
+    border: 2px solid mediumseagreen;
+    background: radial-gradient(circle at center,white,rgba(169, 169, 169, .02));
+    margin-bottom: 10px;
+}
+
+.solution{
+    border: 2px solid mediumseagreen;
+    background: radial-gradient(circle at center,rgba(12,233,226, 0.05),rgba(12,233,226,0.15));
+}
+
+
+.commentBox{
+    background: lightgrey;
+}
+
+.comment{
+    margin-top: -8px;
+    margin-bottom: -5px;
+    margin-left: 1%;
+    background: lightgrey;
+}
+
+.typeComment{
+    width: 93%;
+    margin-left: 2%;
+    margin-top: -8px;
+    font-family:FontAwesome;
+}

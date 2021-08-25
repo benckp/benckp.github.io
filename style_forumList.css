@@ -1,0 +1,54 @@
+
+
+.forum-bar{
+    background: radial-gradient(ellipse at center,rebeccapurple,midnightblue);
+    position: fixed;
+    z-index: 500;
+}
+.filter {
+    padding: 6px 8px;
+    margin-right: 6px;
+    font-size: 17px;
+}
+
+.filter:hover {
+    padding: 6px 8px;
+    margin-right: 6px;
+    font-size: 17px;
+}
+
+#forumList{
+    overflow-y: scroll;
+    margin: 10px;
+    height:calc(100vh - 220px);
+    width: 290px;
+    position: fixed;
+}
+
+.post{
+    border-radius: 10px;
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+    margin: 10px;
+    outline: none;
+}
+
+.post:hover{
+    border: 2px solid rebeccapurple;
+}
+.post:focus{
+    border: 2px solid rebeccapurple;
+}
+
+.unsolved{
+    background: radial-gradient(ellipse  at center,rgba(255,192,203,0.1),rgba(255,192,203,0.2));
+}
+
+.solved{
+    background: radial-gradient(ellipse  at center,rgba(12,233,226, 0.05),rgba(12,233,226, 0.1));
+}
+
+.past{
+    background-color: white;
+}
