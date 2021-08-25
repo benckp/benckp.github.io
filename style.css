@@ -6,7 +6,7 @@ body {
 #content {
     margin-top:88px;
     padding-left: 290px;   /* LC width 290px */
-    padding-right: 300px;  /* RC width 300px */
+    padding-right: 300px;  /* RC width 290px */
 }
 #content .column {
     position: relative;
@@ -23,7 +23,8 @@ body {
     width: 296px;          /* LC width */
     right: 300px;          /* LC width */
 }
-.right {
+
+#right {
     padding-left: 10px;   /* LC width 290px */
     width: 290px;          /* LC width */
     margin-right: -300px;  /* RC width */

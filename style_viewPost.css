@@ -15,7 +15,7 @@
 
 .answer{
     border: 2px solid mediumseagreen;
-    background: radial-gradient(circle at center,white,rgba(169, 169, 169, .02));
+    background: whitesmoke;
     margin-bottom: 10px;
 }
 

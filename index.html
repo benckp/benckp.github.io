@@ -1,4 +1,4 @@
-<!-- Name:   CHU, Kai Pan -->
+<!-- Author:   CHU, Kai Pan -->
 <!-- Topic:  STAT3005 Platform -->
 
 <!DOCTYPE html>
@@ -16,17 +16,18 @@
 <body>
     <div class="topnav">
         <a class="active"><i class="fa fa-home"></i></a>
+        <div style="float: right;">
+            <a href="login"><i class="fa fa-user">&nbsp User Name</i></a>
+            <a href="logout"><i class="fa fa-sign-out"></i></a>
+        </div>
         <a style="font-family:FontAwesome">Course&nbsp &#xf0da</a>
         <a >STAT3005</a>
         <a >STAT4010</a>
-        <div class="topnav-right">
-            <a href="#login"><i class="fa fa-user">&nbsp User Name</i></a>
-            <a href="#logout"><i class="fa fa-sign-out"></i></a>
-        </div>
     </div>
 
     <div class="secnav">
         <a id="forumBtn" onclick="changeLeft()" style="font-size: 15px;font-family:FontAwesome">&#xf0d9 Forums</a>
+        <a id="newBtn" onclick="changeRight()"  style="float: right;font-size: 15px;font-family:FontAwesome"> News &#xf0da</a>
         <a tabindex="1">Ch1</a>         <a tabindex="1">Ch2</a>
         <a tabindex="1">Ch3</a>         <a tabindex="1">Ch4 </a>
         <a tabindex="1">Ch5 </a>        <a tabindex="1">Ch6 </a>
@@ -38,15 +39,12 @@
         <a tabindex="1">HW7 </a>        <a tabindex="1">HW8 </a>
         <a tabindex="1">Midterm </a>        <a >Final </a>
         <a tabindex="1">Other </a>
-        <div class="topnav-right">
-            <a id="newBtn" onclick="changeRight()"  style="font-size: 15px;font-family:FontAwesome"> News &#xf0da</a>
-        </div>
     </div>
 
     <div id="content">
         <div class="column left">
-            <div class="forum-bar" style="margin-top:4px;position: fixed;padding: 1px 9px;">
-                <button id="open" style="font-family:FontAwesome; padding: 6px; margin-top: 8px; margin-left: 5px;    font-size: 16px;    cursor: pointer;"><i class="fa fa-file"></i> Post</button>
+            <div class="forum-bar" style="margin-top:4px;position: fixed; padding: 1px 1px;">
+                <button id="open" style="font-family:FontAwesome;padding: 6px; margin-top: 8px; margin-left: 12px;    font-size: 16px;    cursor: pointer;"><i class="fa fa-file"></i> Post</button>
                 <input type="text" style="font-family:FontAwesome" placeholder="&#xF002 Search...">
             </div>
             <div class="forum-bar" style="margin-top:54px; padding: 3px 3px; width:290px;padding-bottom: 10px;">
@@ -91,85 +89,82 @@
             </div>
         </div>
         <div class="column middle">
-            <div style=" padding-left: 10px;">
-                <div class="question">
-                    <table style="width: 100%">
-                        <tr>
-                            <td><h2>[#3] (Selcted) History of Dept</h2></td>
-                            <td style="text-align: right;"><button style="font-family:FontAwesome;">&#xf119 Not Useful</button> <b style="color:purple; border-bottom: 2px solid purple;">+999</b> <button style="font-family:FontAwesome;"> &#xf164 Useful</button></td>
-                        </tr>
-                    </table>
-                    <hr class="dashed" style="margin-top: -15px; margin-bottom: -10px"></h2>
-                    <p>Author&nbsp&nbsp <i  style="color:grey" class="fa 	fa fa-edit">20-08-2021</i>&nbsp&nbsp<button class='tag' style="font-family:FontAwesome;">HW1</button> <button class="tag"  style="font-family:FontAwesome;">Q1</button>  </p>
-                    <p>The Department of Statistics (“the Department”) at the Chinese University of Hong Kong (CUHK) was founded in 1982. In fact, statistical activities at CUHK predate the formation of the Department. Throughout the past 30 years, the Department has been growing steadily as a result of valuable contributions of numerous faculty, staff members and students. Below shown is a chronicle of major events of the Department:</p>
+            <div class="question">
+                <table style="width: 100%">
+                    <tr>
+                        <td><h2>[#3] (Selcted) History of Dept</h2></td>
+                        <td style="text-align: right;"><button style="font-family:FontAwesome;">&#xf119 Not Useful</button> <b style="color:purple; border-bottom: 2px solid purple;">+999</b> <button style="font-family:FontAwesome;"> &#xf164 Useful</button></td>
+                    </tr>
+                </table>
+                <hr class="dashed" style="margin-top: -15px; margin-bottom: -10px"></h2>
+                <p>Author&nbsp&nbsp <i  style="color:grey" class="fa 	fa fa-edit">20-08-2021</i>&nbsp&nbsp<button class='tag' style="font-family:FontAwesome;">HW1</button> <button class="tag"  style="font-family:FontAwesome;">Q1</button>  </p>
+                <p>The Department of Statistics (“the Department”) at the Chinese University of Hong Kong (CUHK) was founded in 1982. In fact, statistical activities at CUHK predate the formation of the Department. Throughout the past 30 years, the Department has been growing steadily as a result of valuable contributions of numerous faculty, staff members and students. Below shown is a chronicle of major events of the Department:</p>
 
-                    <table style="width: 100%; margin-top: 30px">
-                        <tr>
-                            <td id="difficulty" style="text-align: left;">
-                                <div id="sliderValue"> <span>Avg</span></div>
-                                Easy <input type="range" min="0" max="10" onchange="voteDiff()" id="slider"/>Difficult</td>
-                            <td style="text-align: right;"><button style="font-family:FontAwesome;">&#xf040 Answer this question </button></td>
-                        </tr>
-                    </table>
-                    <div class="commentBox" style="margin-top: 12px;">
-                        <p class="comment"><b>Alex <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i> </b> First comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
-                        <p class="comment"><b>Ben <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i></b> Second comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
-                        <input class="typeComment" type="text" placeholder="&#xF075 Comment... ">
-                    </div>
+                <table style="width: 100%; margin-top: 30px">
+                    <tr>
+                        <td id="difficulty" style="text-align: left;">
+                            <div id="sliderValue"> <span>Avg</span></div>
+                            Easy <input type="range" min="0" max="10" onchange="voteDiff()" id="slider"/>Difficult</td>
+                        <td style="text-align: right;"><button style="font-family:FontAwesome;">&#xf040 Answer this question </button></td>
+                    </tr>
+                </table>
+                <div class="commentBox" style="margin-top: 12px;">
+                    <p class="comment"><b>Alex <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i> </b> First comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
+                    <p class="comment"><b>Ben <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i></b> Second comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
+                    <input class="typeComment" type="text" placeholder="&#xF075 Comment... ">
                 </div>
+            </div>
 
-                <div class="solution">
-                    <table style="width: 100%">
-                        <tr>
-                            <td><b>Good student</b>&nbsp&nbsp <i  style="color:grey" class="fa 	fa fa-edit">20-08-2021</i>
-                                <i style="color:purple" class="fa fa-star"> This answer is adapted as solution by the Author / Instructor.</i> </td>
-                            <td style="text-align: right;"><button style="font-family:FontAwesome;">&#xf119 Not Useful</button> <b style="color:purple; border-bottom: 2px solid purple;">+999</b> <button style="font-family:FontAwesome;"> &#xf164 Useful</button></td>
-                        </tr>
-                    </table>
-                    <hr class="dashed" style="margin-top: -1px; margin-bottom: -10px"></h2>
-                    <p>Where is the events? I guess it should be in our department website.</p>
-                    <div class="commentBox" style="margin-top: 12px;">
-                        <p class="comment"><b>Alex <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i></b> First comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
-                        <p class="comment"><b>Ben <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i></b> Second comment!<hr class="dashed"style="margin-bottom: -15px;"></p>
-                        <input class="typeComment" type="text" placeholder="&#xF075 Comment... ">
-                    </div>
+            <div class="solution">
+                <table style="width: 100%">
+                    <tr>
+                        <td><b>Good student</b>&nbsp&nbsp <i  style="color:grey" class="fa 	fa fa-edit">20-08-2021</i>
+                            <i style="color:purple" class="fa fa-star"> This answer is adapted as solution by the Author / Instructor.</i> </td>
+                        <td style="text-align: right;"><button style="font-family:FontAwesome;">&#xf119 Not Useful</button> <b style="color:purple; border-bottom: 2px solid purple;">+999</b> <button style="font-family:FontAwesome;"> &#xf164 Useful</button></td>
+                    </tr>
+                </table>
+                <hr class="dashed" style="margin-top: -1px; margin-bottom: -10px"></h2>
+                <p>Where is the events? I guess it should be in our department website.</p>
+                <div class="commentBox" style="margin-top: 12px;">
+                    <p class="comment"><b>Alex <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i></b> First comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
+                    <p class="comment"><b>Ben <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i></b> Second comment!<hr class="dashed"style="margin-bottom: -15px;"></p>
+                    <input class="typeComment" type="text" placeholder="&#xF075 Comment... ">
                 </div>
+            </div>
 
-
-                <div class="answer">
-                    <table style="width: 100%">
-                        <tr>
-                            <td><b>Student 2</b>&nbsp&nbsp <i  style="color:grey" class="fa 	fa fa-edit">20-08-2021</i> </td>
-                            <td style="text-align: right;"><button style="font-family:FontAwesome;">&#xf119 Not Useful</button> <b style="color:purple; border-bottom: 2px solid purple;">+10</b> <button style="font-family:FontAwesome;"> &#xf164 Useful</button></td>
-                        </tr>
-                    </table>
-                    <hr class="dashed" style="margin-top: -1px; margin-bottom: -10px"></h2>
-                    <p>Good question. Let me think about it.</p>
-                    <div class="commentBox" style="margin-top: 12px;">
-                        <p class="comment"><b>Alex <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i> </b>First comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
-                        <p class="comment"><b>Ben <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i></b> Second comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
-                        <input class="typeComment" type="text" placeholder="&#xF075 Comment... ">
-                    </div>
+            <div class="answer">
+                <table style="width: 100%">
+                    <tr>
+                        <td><b>Student 2</b>&nbsp&nbsp <i  style="color:grey" class="fa 	fa fa-edit">20-08-2021</i> </td>
+                        <td style="text-align: right;"><button style="font-family:FontAwesome;">&#xf119 Not Useful</button> <b style="color:purple; border-bottom: 2px solid purple;">+10</b> <button style="font-family:FontAwesome;"> &#xf164 Useful</button></td>
+                    </tr>
+                </table>
+                <hr class="dashed" style="margin-top: -1px; margin-bottom: -10px"></h2>
+                <p>Good question. Let me think about it.</p>
+                <div class="commentBox" style="margin-top: 12px;">
+                    <p class="comment"><b>Alex <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i> </b>First comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
+                    <p class="comment"><b>Ben <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i></b> Second comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
+                    <input class="typeComment" type="text" placeholder="&#xF075 Comment... ">
                 </div>
+            </div>
 
-                <div class="answer">
-                    <table style="width: 100%">
-                        <tr>
-                            <td><b>Student 3</b>&nbsp&nbsp <i  style="color:grey" class="fa 	fa fa-edit">20-08-2021</i></td>
-                            <td style="text-align: right;"><button style="font-family:FontAwesome;">&#xf119 Not Useful</button> <b style="color:purple; border-bottom: 2px solid purple;">-5</b> <button style="font-family:FontAwesome;"> &#xf164 Useful</button></td>
-                        </tr>
-                    </table>
-                    <hr class="dashed" style="margin-top: -1px; margin-bottom: -10px"></h2>
-                    <p>I don't understand English</p>
-                    <div class="commentBox" style="margin-top: 12px;">
-                        <p class="comment"><b>Alex <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i> </b>First comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
-                        <p class="comment"><b>Ben <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i> </b> Second comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
-                        <input class="typeComment" type="text" placeholder="&#xF075 Comment... ">
-                    </div>
+            <div class="answer">
+                <table style="width: 100%">
+                    <tr>
+                        <td><b>Student 3</b>&nbsp&nbsp <i  style="color:grey" class="fa 	fa fa-edit">20-08-2021</i></td>
+                        <td style="text-align: right;"><button style="font-family:FontAwesome;">&#xf119 Not Useful</button> <b style="color:purple; border-bottom: 2px solid purple;">-5</b> <button style="font-family:FontAwesome;"> &#xf164 Useful</button></td>
+                    </tr>
+                </table>
+                <hr class="dashed" style="margin-top: -1px; margin-bottom: -10px"></h2>
+                <p>I don't understand English</p>
+                <div class="commentBox" style="margin-top: 12px;">
+                    <p class="comment"><b>Alex <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i> </b>First comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
+                    <p class="comment"><b>Ben <i  style="color:dimgrey;margin-top: 10px; font-size: 11px" class="fa 	fa fa-edit">20-08-2021</i> </b> Second comment!<hr class="dashed" style="margin-bottom: -15px;"></p>
+                    <input class="typeComment" type="text" placeholder="&#xF075 Comment... ">
                 </div>
             </div>
         </div>
-        <div class="column right">
+        <div id='right' class="column">
             <h2>News</h2>
             <p>To be introduced...</p>
         </div>

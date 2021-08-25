@@ -25,12 +25,15 @@ function changeLeft(event) {
 function changeRight(event) {
     var el = document.getElementById("content");
     var el2 = document.getElementById("newBtn");
+    var el3 = document.getElementById("right");
     const style = getComputedStyle(el).getPropertyValue('padding-right')
     if (style == '300px'){
         el2.innerHTML = "&#xf0d9 News";
+        el3.style.paddingLeft = '20px';
         el.style.paddingRight = '0px';
     }else{
         el2.innerHTML = "News &#xf0da";
+        el3.style.paddingLeft = '10px';
         el.style.paddingRight = '300px';
     }
 }
@@ -40,7 +43,7 @@ function voteDiff(event) {
     var slider = document.getElementById("slider");
     var slideValue = document.querySelector("span");
     slider.disabled = true
-    slideValue.style.marginLeft = (slider.value*12)+"px";
+    slideValue.style.marginLeft = (slider.value*12.1)+"px";
     slideValue.classList.add("show");
     //do the rest of the action...
 };

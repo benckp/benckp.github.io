@@ -1,9 +1,8 @@
-
-
 .forum-bar{
     background: radial-gradient(ellipse at center,rebeccapurple,midnightblue);
     position: fixed;
     z-index: 500;
+    width: 296px;
 }
 .filter {
     padding: 6px 8px;
