@@ -1,0 +1,77 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background:radial-gradient(circle farthest-corner at left,midnightblue,rebeccapurple);
+    /*
+    background:radial-gradient(circle farthest-corner at left,purple,rebeccapurple);
+    background:radial-gradient(circle farthest-corner at left,midnightblue,rebeccapurple);
+    background:radial-gradient(circle farthest-corner at left,rebeccapurple,mediumpurple);*/
+    overflow: hidden;
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+}
+.secnav {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 500;
+    background:radial-gradient(circle farthest-corner at left,midnightblue,rebeccapurple);
+    overflow: hidden;
+    position: fixed;
+    top: 48px;
+    border-bottom:2px solid midnightblue;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    outline:none;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display:block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto','Arial';
+}
+.secnav a {
+    float: left;
+    display:block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: 'Roboto','Arial';
+}
+.topnav h {
+    float: left;
+    display:block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto','Arial';
+}
+
+/* Change the color of links on hover */
+.topnav a:hover, .secnav a:hover{
+    background-color: steelblue;
+    border-left: 2px solid purple;
+    color: black;
+}
+
+
+
+/* Styling of the search container */
+.topnav .search-container, .secnav .search-container{
+    background-color: steelblue;
+    float: left;
+}
+

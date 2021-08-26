@@ -1,6 +1,9 @@
 body {
     min-width: 900px;      /* 2x LC width + RC width */
+    background:white;
+    /*
     background:	radial-gradient(ellipse at center,rgba(169, 169, 169, .3),rgba(169, 169, 169, .1));
+     */
 }
 
 #content {
@@ -13,11 +16,12 @@ body {
     float: left;
 }
 
-.middle  {
+#middle  {
     width: 100%;
     margin-left: -300px;
     border-right: 2px solid midnightblue;
     border-left: 2px solid midnightblue;
+    min-height: calc(100vh - 111px);
 }
 .left {
     width: 296px;          /* LC width */
@@ -40,7 +44,7 @@ footer {
 }
 
 
-button {
+button, .button {
     background: radial-gradient(ellipse at center,lightblue,skyblue);
     border-color: skyblue;
     border-left: 2px solid purple;
@@ -48,17 +52,22 @@ button {
     cursor: pointer;
 }
 
+.button, .button:focus{
+    margin: 2px;
+}
+
 .tag{
     background: radial-gradient(ellipse at center,lightblue,skyblue);
     outline: none;
     cursor: pointer;
-    border-radius: 10px;
-    border: 3px solid purple;
+    border-radius: 7px;
+    border: 1px solid purple;
+    margin: 1px;
 }
 
-button:hover, button:focus{
-    border-radius: 10px;
-    border: 3px solid purple;
+button:hover, button:focus, .button:focus{
+    border-radius: 7px;
+    border: 2px solid purple;
 }
 
 input[type="range"]{
@@ -139,4 +148,9 @@ input[type=text] {
     border: 2px solid black ;
     border-radius: 7px;
     background-color : whitesmoke;
+}
+
+label{
+    font-weight: bold;
+    margin-right: 2%;
 }

@@ -1,0 +1,31 @@
+#createQuestion {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top:  43px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 87%;
+    border-radius: 10px;
+    text-align: left;
+    padding: 4px;
+    z-index: 20;
+    height:calc(100vh - 175px);
+    border: 2px solid purple;
+    border-left: 6px solid purple;
+}
+
+#preview{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 90%;
+    border-radius: 10px;
+    text-align: left;
+    padding: 4px;
+    z-index: 20;
+    border: 2px solid rebeccapurple;
+    border-left: 6px solid rebeccapurple;
+    display:none;
+}

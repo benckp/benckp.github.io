@@ -43,7 +43,7 @@ CREATE TABLE S1 (A INTEGER, B DATE); -- date
 SELECT * FROM S1;
 DROP TABLE S1;
 
---- pratise
+-- pratise
 SELECT * FROM route WHERE EXISTS (SELECT * FROM flight WHERE flight.flighthour > 10 AND route.rid = flight.rid);
 SELECT R.rid FROM route R, flight F WHERE R.rid = F.rid AND F.flighthour > 5
 GROUP BY R.rid HAVING COUNT(*) >= 1;
