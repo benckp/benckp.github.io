@@ -1,5 +1,5 @@
 <div class="question">
-    <h2 style="font-family: 'Arial'; margin-top: 5px;" >[#3] (Selcted) History of Dept</h2>
+    <h2 style="font-family: 'Arial'; margin-top: 5px;" >[#3] (Selected) History of Dept</h2>
     <hr class="dashed" style="margin-top: -10px; margin-bottom: -10px">
     <table style="margin-bottom:-20px; width: 100%">
         <tr>
